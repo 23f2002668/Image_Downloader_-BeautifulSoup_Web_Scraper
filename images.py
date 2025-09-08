@@ -95,7 +95,7 @@ else :
 import cloudscraper
 
 scraper = cloudscraper.create_scraper()
-html = scraper.get("https://www.filmibeat.com/bollywood/features/2016/sonali-bendre-modelling-days-hot-pictures-230015.html").text
+html = scraper.get("<link>").text
 print(html[:500])  # Preview
 
 """
